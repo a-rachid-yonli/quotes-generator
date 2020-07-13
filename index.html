@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>quotes</title>
+</head>
+<style>
+    .card {
+        transform: translate(0%, 100%)!important;
+        box-shadow: 12px 10px 40px rgb(228, 213, 213)!important;
+    }
+    
+    body {
+        background: linear-gradient(to left, rgb(206, 234, 235), rgb(43, 231, 238));
+    }
+    
+    .card-text {
+        text-shadow: 20px 10px 40px rgb(255, 255, 255)!important;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card bg-secondary text-light text-center">
+                    <div class="card-header   text-center bg-success ">
+                        <h3>Quotes Generator</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ">My Quotes</h5>
+                        <p class="card-text  ">With supporting text below as a natural lead-in to additional content.</p>
+                        <button id="button" type="button" class="btn btn-success">Generate</button>
+                    </div>
+                    <div class="card-footer bg-success  text-muted">
+                        made by abdoul rachid yonli
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const display = document.querySelector('.card-text');
+        const button = document.getElementById('button');
+        const quotes = ['“Toutes les femmes veulent que leur mari soit fort au lit. Mais aucune ne veut laisser son mari aller aux entrainements”',
+            '“Si vous voulez changer le monde, faites le maintenant quand vous êtes encore célibataire car lorsque vous serez mariés, vous ne pourrez même plus changer de chaines sur votre téléviseur”',
+            '“Si le gouvernement trouve des diamants dans ton jardin, C’est les biens du gouvernement, mais s’il trouve du cannabis, mon ami c’est à toi seul”',
+            '“Souris aujourd’hui demain il te manquera peut être une dent!”',
+            '“Le président Mugabe ne dort pas en public, il protège ses yeux”',
+            '” Ce n’est pas l’amour qui renforce une relation à distance mais les compagnies de transfert d’argent”',
+            ' “Même satan n’est pas gay ; il a préféré aller vers Eve plutôt que d’aller vers Adam”',
+            '” Ils ont fait les pneus des véhicules en noir, peint le diable en noir … Mais tant que le papier hygiénique est bien blanc et que je m’essuie le cul avec lorsque je vais aux chiottes, alors je m’en réjouis”',
+            '”Respectez les femmes enceintes car ce n’est pas facile de se promener avec une preuve d’avoir couché avec un homme”',
+            '”Si vous êtes laids vous êtes laids !!!!! Cessons de parler de beauté intérieure car on ne marche pas avec des rayons X ”',
+            '”Certains hommes aiment tellement leur femme que pour ne pas l’user ils se servent de celles des autres”',
+            '”Traitez bien chaque partie de votre serviette. Parce que la partie qui essuie vos fesses aujourd’hui essuyera votre visage demain”',
+            '”Quand vous faites l’amour avec une fille d’une autre nationalité, faites le très bien car vous représentez tout un pays!”'
+        ];
+        button.addEventListener("click", function generate() {
+            var randomquote = quotes[Math.floor(Math.random() * quotes.length)];
+            display.innerHTML = randomquote;
+        });
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
